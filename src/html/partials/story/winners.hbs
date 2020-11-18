@@ -1,0 +1,35 @@
+<section id='winners'>
+    <div class='hed'>
+        <h2>The Winners</h2>
+        <p>Our three favorite essays.</p>
+    </div>
+    <ul>
+        {{#each doc.passion}}
+            <li>
+                <h3><a href='{{url}}' target='_blank'>{{title}}</a></h3>
+                <p class='credit'>Credit: {{name}}</p>
+                <a href='{{url}}' target='_blank'><img src='assets/images/{{img}}@2x.jpg'></a>
+                {{#each remarks}}
+                    <p>{{{value}}}</p>
+                {{/each}}
+            </li>
+        {{/each}}
+    </ul>
+
+    <div class='hed'>
+        <h2>Honorable Mentions</h2>
+        <p>Definitely worth a click.</p>
+    </div>
+    <ul class='other'>
+        {{#each doc.passionOther}}
+            <li>
+                <a href='{{url}}' target='_blank'>{{title}}</a></p>
+            </li>
+        {{/each}}
+    </ul>
+    <div class='hed'>
+        <h2>{{doc.hed2}}</h2>
+        <p>{{doc.dek2}}</p>
+        <p>{{doc.prize2}}</p>
+    </div>
+</section>

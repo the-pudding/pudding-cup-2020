@@ -1,0 +1,11 @@
+<div class='intro'>
+	<div class='prev'>
+		<p>Previous years</p>
+		{{#each doc.years}}
+			<a href='{{{link}}}' target=_'blank'>{{{year}}}</a>
+		{{/each}}
+	</div>
+	{{!-- <p class='intro__overline'>Announcing Winners: Dec. 6</p> --}}
+	<h1 class='intro__hed'>The Pudding Cup</h1>
+	<p class='intro__dek'>{{doc.description}}</p>
+</div>

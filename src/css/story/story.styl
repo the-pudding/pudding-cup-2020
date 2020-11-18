@@ -1,0 +1,125 @@
+/* CUSTOM STORY STYLE */
+.prev
+    display flex
+    flex-direction row
+    margin 0 auto
+    max-width $column-width
+    color $gray-dark
+    justify-content center
+    margin-bottom 3rem
+
+    p
+        margin 0
+        set-type-size('root', true)
+
+    a
+      set-type-size('root', true) 
+      color $gray-dark
+      margin 0 0.5rem 
+      font-weight 700
+      border-bottom 1px solid $gray
+      &:hover
+        color #ff533d
+        border-bottom 1px solid #ff533d   
+
+.details
+    margin 3rem auto 9rem auto
+
+    ul
+        margin-left 3rem
+        font-family $national
+        list-style-type disc
+
+    .note
+        margin-top 2rem
+        padding-top 0.25rem
+        border-top 1px solid $gray
+        color $gray-dark
+        font-family $national
+        set-type-size('small', true)
+
+    button
+        margin 4rem auto
+        width 10rem
+        max-width 10rem
+        height 4rem
+        background-color #ff533d
+        color $white
+        border-radius 0.25rem  
+        display block 
+        &:hover
+            background-color $off-black    
+
+body
+	padding 1rem
+	background-color $off-white
+
+ul
+	li
+		margin-bottom 0.5rem
+
+a
+	color $primary
+
+p.submit
+	margin 3rem 0
+	text-align center
+
+	a
+		padding 1rem
+		set-type-size(large, false)
+		border none
+		border-radius 3px
+		background $primary
+		color $white
+		font-weight 600
+		font-family $sans
+		line-height 1
+
+p.commercial
+	margin 0 auto
+	padding 1rem
+	max-width $column-width
+	set-type-size(small, true)
+
+#winners
+	margin 0 auto
+	padding 1rem
+	max-width 40rem
+
+	.hed
+		h2
+			margin 0
+			font-weight 600
+
+		p
+			margin 0
+
+	ul
+		margin-top 2rem
+
+	li
+		margin-bottom 4rem
+
+	h3
+		margin 0
+		font-weight bold
+
+		a
+			border-color $primary
+			color $primary
+
+	p.credit
+		margin 0.5rem 0
+		line-height 1.4
+
+	img
+		margin-top 2rem
+
+	.other
+		margin-bottom 3rem
+
+		li
+			margin-top 0
+			margin-bottom 0
+			line-height 1.5
