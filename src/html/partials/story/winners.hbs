@@ -7,8 +7,8 @@
         {{#each doc.passion}}
             <li>
                 <h3><a href='{{url}}' target='_blank'>{{title}}</a></h3>
-                <p class='credit'>Credit: {{name}}</p>
-                <a href='{{url}}' target='_blank'><img src='assets/images/{{img}}@2x.jpg'></a>
+                <p class='credit'>{{{name}}}</p>
+                <a href='{{url}}' target='_blank'><img src='assets/images/{{img}}.jpg'></a>
                 {{#each remarks}}
                     <p>{{{value}}}</p>
                 {{/each}}
@@ -27,9 +27,5 @@
             </li>
         {{/each}}
     </ul>
-    <div class='hed'>
-        <h2>{{doc.hed2}}</h2>
-        <p>{{doc.dek2}}</p>
-        <p>{{doc.prize2}}</p>
-    </div>
+    <p class='note'>*{{{doc.commercial}}}</p>
 </section>
