@@ -91,6 +91,7 @@ p.commercial
 		h2
 			margin 0
 			font-weight 600
+			set-type-size('xx-large', true)
 
 		p
 			margin 0
@@ -105,6 +106,7 @@ p.commercial
 		margin 0
 		font-weight bold
 		cursor pointer
+		set-type-size('large', true)
 
 		a
 			border-color #a239ca
@@ -135,18 +137,25 @@ p.commercial
 
 	.other
 		margin-bottom 3rem
-		list-style-type disc
 
 		li
 			margin-top 0
 			margin-bottom 0
 			line-height 1.5
+			set-type-size('large', true)
+			font-weight 700
+
+			span
+				font-family $national
+				font-weight 500
+				set-type-size('medium', true)
 
 			a
-				border-bottom 1px solid $off-black
+				border-bottom 1px solid #a239ca
+				color #a239ca
 				&:hover
-					color #a239ca
-					border-bottom 1px solid #a239ca
+					color $gray-dark
+					border-bottom 1px solid $off-black
 
 .note
 	margin-top 2rem
